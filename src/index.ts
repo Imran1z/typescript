@@ -13,3 +13,15 @@ let f=<boolean>true;
 let surname: string|number="Ahmed";
 surname=5;
 
+
+
+//creating the functions in typescript
+const func=(n:number,m:number):number=>{
+    console.log(n,m);
+    //it can automaticaly detect the return type of the function or wen can explicitly define it
+    return n*m;
+   // return String(n*m);
+
+}
+
+func(240,24);

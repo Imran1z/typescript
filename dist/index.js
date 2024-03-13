@@ -10,3 +10,11 @@ let f = true;
 //union of two datatypes
 let surname = "Ahmed";
 surname = 5;
+//creating the functions in typescript
+const func = (n, m) => {
+    console.log(n, m);
+    //it can automaticaly detect the return type of the function or wen can explicitly define it
+    return n * m;
+    // return String(n*m);
+};
+func(240, 24);
