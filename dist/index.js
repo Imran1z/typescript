@@ -52,7 +52,7 @@ const func2 = (...m) => {
 };
 func2(5, 10, 15, 20, 25, 30);
 const getData = (product) => {
-    console.log(product);
+    //console.log(product)
 };
 const product1 = {
     name: "Imran",
@@ -61,4 +61,9 @@ const product1 = {
     photo: "something.com"
 };
 getData(product1);
+//--------------------------------------------------------------------------------------------------------------------------------------
+//never type
+const errorHandler = () => {
+    throw new Error();
+};
 //--------------------------------------------------------------------------------------------------------------------------------------

@@ -113,14 +113,14 @@ func2(5,10,15,20,25,30);
 //function with object
 
 interface Product {
-    name:string,
+   readonly name:string,
     stock:number,
     price:number,
     photo?:string
 }
 type getdataType=(product:Product)=>void;
 const getData:getdataType=(product)=>{
-    console.log(product)
+    //console.log(product)
 }
 
 const product1:Product={
@@ -131,6 +131,13 @@ const product1:Product={
 }
 
 getData(product1)
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+//never type
+const errorHandler =()=>{
+   throw new Error() 
+}
 
 //--------------------------------------------------------------------------------------------------------------------------------------
 
