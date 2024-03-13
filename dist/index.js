@@ -51,4 +51,14 @@ const func2 = (...m) => {
     return m;
 };
 func2(5, 10, 15, 20, 25, 30);
+const getData = (product) => {
+    console.log(product);
+};
+const product1 = {
+    name: "Imran",
+    stock: 15,
+    price: 2000,
+    photo: "something.com"
+};
+getData(product1);
 //--------------------------------------------------------------------------------------------------------------------------------------

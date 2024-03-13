@@ -110,5 +110,20 @@ const func2:FuncType1=(...m)=>{
 func2(5,10,15,20,25,30);
 
 
+//function with object
+type getdataType=(product:{name:string,stock:number,price:number,photo?:string})=>void;
+const getData:getdataType=(product)=>{
+    console.log(product)
+}
+
+const product1={
+    name:"Imran",
+    stock:15,
+    price:2000,
+    photo:"something.com"
+}
+
+getData(product1)
+
 //--------------------------------------------------------------------------------------------------------------------------------------
 
