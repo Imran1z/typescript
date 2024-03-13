@@ -15,8 +15,11 @@ surname=5;
 
 
 
+
+//we can define the type on ther side called type aliases
+type funcreturn=(n:number,m:number)=>number
 //creating the functions in typescript
-const func=(n:number,m:number):number=>{
+const func:funcreturn=(n,m)=>{
     console.log(n,m);
     //it can automaticaly detect the return type of the function or wen can explicitly define it
     return n*m;
