@@ -49,12 +49,38 @@ type Obj={
     gender:boolean;
     name?:string;
 }
+//we can also make the interface for the type
+interface Obj1 {
+    height:number;
+    weight:number;
+    gender:boolean;
+    name?:string;
+}
 
-
-const obj:Obj={
+const obj:Obj1={
     height:24,
     weight:25,
     gender:true,
     name:"imran"
 }
+
+
+//interface use 
+interface NewObj extends Obj {
+    func:funcreturn;
+}
+const obj1:NewObj={
+    height:24,
+    weight:25,
+    gender:true,
+    name:"imran" ,
+    func:(n,m)=> {
+       console.log(n,m) 
+       return n*m
+    },
+}
+
+const ans:number=obj1.func(20,30)
+console.log("ans",ans)
+
 

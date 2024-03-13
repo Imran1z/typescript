@@ -30,3 +30,15 @@ const obj = {
     gender: true,
     name: "imran"
 };
+const obj1 = {
+    height: 24,
+    weight: 25,
+    gender: true,
+    name: "imran",
+    func: (n, m) => {
+        console.log(n, m);
+        return n * m;
+    },
+};
+const ans = obj1.func(20, 30);
+console.log("ans", ans);
