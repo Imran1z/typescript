@@ -111,12 +111,19 @@ func2(5,10,15,20,25,30);
 
 
 //function with object
-type getdataType=(product:{name:string,stock:number,price:number,photo?:string})=>void;
+
+interface Product {
+    name:string,
+    stock:number,
+    price:number,
+    photo?:string
+}
+type getdataType=(product:Product)=>void;
 const getData:getdataType=(product)=>{
     console.log(product)
 }
 
-const product1={
+const product1:Product={
     name:"Imran",
     stock:15,
     price:2000,
