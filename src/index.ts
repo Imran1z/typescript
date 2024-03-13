@@ -13,7 +13,7 @@ let f=<boolean>true;
 let surname: string|number="Ahmed";
 surname=5;
 
-
+//--------------------------------------------------------------------------------------------------------------------------------------
 
 
 //we can define the type on ther side called type aliases
@@ -29,6 +29,7 @@ const func:funcreturn=(n,m)=>{
 
 //func(240,24);
 
+//--------------------------------------------------------------------------------------------------------------------------------------
 
 //Arrays in typescript
 const arr:number[] =[12,24,36,48];
@@ -41,6 +42,7 @@ const arr3:Array<string|number>=["number",20];
 //     console.log(i)
 // })
 
+//--------------------------------------------------------------------------------------------------------------------------------------
 
 //objects
 type Obj={
@@ -64,6 +66,7 @@ const obj:Obj1={
     name:"imran"
 }
 
+//--------------------------------------------------------------------------------------------------------------------------------------
 
 //interface use 
 interface NewObj extends Obj {
@@ -80,7 +83,32 @@ const obj1:NewObj={
     },
 }
 
-const ans:number=obj1.func(20,30)
-console.log("ans",ans)
+// const ans:number=obj1.func(20,30)
+// console.log("ans",ans)
 
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+
+//Functions and all|
+//optional parameter
+type FuncType =(n:number,m:number,l?:number)=>number
+
+const func1:FuncType=(n,m,l)=>{
+    if(typeof l ==="undefined") return n*m;
+    return n*m*l;
+}
+
+func1(5,10);
+
+
+//rest operator
+type FuncType1=(...m:number[])=>number[];
+const func2:FuncType1=(...m)=>{
+    return m;
+
+}
+func2(5,10,15,20,25,30);
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
 
