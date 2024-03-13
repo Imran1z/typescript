@@ -37,7 +37,24 @@ const arr1:string[] =["imran","ahmed","shaikh"];
 const arr2:Array<string>=new Array(20);
 const arr3:Array<string|number>=["number",20];
 
-arr1.forEach((i)=>{
-    console.log(i)
-})
+// arr1.forEach((i)=>{
+//     console.log(i)
+// })
+
+
+//objects
+type Obj={
+    height:number;
+    weight:number;
+    gender:boolean;
+    name?:string;
+}
+
+
+const obj:Obj={
+    height:24,
+    weight:25,
+    gender:true,
+    name:"imran"
+}
 

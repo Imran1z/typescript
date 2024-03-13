@@ -24,6 +24,9 @@ const arr1 = ["imran", "ahmed", "shaikh"];
 //another way of creating the arrays !!! imprtnt
 const arr2 = new Array(20);
 const arr3 = ["number", 20];
-arr1.forEach((i) => {
-    console.log(i);
-});
+const obj = {
+    height: 24,
+    weight: 25,
+    gender: true,
+    name: "imran"
+};
