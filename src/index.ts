@@ -27,4 +27,17 @@ const func:funcreturn=(n,m)=>{
 
 }
 
-func(240,24);
+//func(240,24);
+
+
+//Arrays in typescript
+const arr:number[] =[12,24,36,48];
+const arr1:string[] =["imran","ahmed","shaikh"];
+//another way of creating the arrays !!! imprtnt
+const arr2:Array<string>=new Array(20);
+const arr3:Array<string|number>=["number",20];
+
+arr1.forEach((i)=>{
+    console.log(i)
+})
+
