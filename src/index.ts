@@ -141,3 +141,23 @@ const errorHandler =()=>{
 
 //--------------------------------------------------------------------------------------------------------------------------------------
 
+//classes
+
+class Player{
+ 
+    constructor(
+        public height:number,
+        public weight:number){}
+
+    myheight=()=>{
+       return this.height;
+    }
+}
+
+const imran =new Player(165,69);
+// console.log(imran.height);
+console.log(imran.myheight());
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
