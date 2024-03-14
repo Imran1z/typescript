@@ -79,5 +79,34 @@ class Player {
 }
 const imran = new Player(165, 69);
 // console.log(imran.height);
-console.log(imran.myheight());
+//console.log(imran.myheight());
 //--------------------------------------------------------------------------------------------------------------------------------------
+//type assertion
+const button = document.getElementById('btn');
+const image = document.getElementById('image');
+//without the ? there will be an error because ts does not know what is going on with the html file
+button === null || button === void 0 ? void 0 : button.onclick;
+image.src;
+const myform = document.getElementById("myform");
+const myinput = document.getElementById("myinput");
+myform.onsubmit = (e) => {
+    e.preventDefault();
+    console.log(myinput.value);
+};
+const myobj = {
+    name: "Imran",
+    email: "imran12334@gamil.com"
+};
+const getName = () => {
+    return myobj["name"];
+};
+const getEmail = () => {
+    return myobj["email"];
+};
+const getDataa = (key) => {
+    return myobj[key];
+};
+const aa = getDataa("email");
+const bb = getDataa("name");
+console.log(aa);
+console.log(bb);
