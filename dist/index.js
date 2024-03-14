@@ -110,3 +110,7 @@ const aa = getDataa("email");
 const bb = getDataa("name");
 console.log(aa);
 console.log(bb);
+const user = {
+    name: "Imran",
+    email: "imran12334@gamil.com"
+};

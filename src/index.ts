@@ -208,3 +208,47 @@ console.log(bb)
 
 
 
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+// Utility Type
+
+
+//partial
+type User={
+    name:string,
+    email:string
+}
+
+type User1= Partial<User>
+
+
+//requaired
+type User2={
+    name?:string,
+    email?:string
+}
+
+type User3= Required<User>
+
+//readonly
+type User4={
+    name?:string,
+    email?:string
+}
+
+type User5= Readonly<User>
+
+const user:User5={
+    name:"Imran",
+    email:"imran12334@gamil.com"
+}
+
+//Record<Keys, Type>
+
+type User6 ={
+    name:string,
+    email:string
+}
+
+type User7 =Record<"name"|"email"|"gender",string>
